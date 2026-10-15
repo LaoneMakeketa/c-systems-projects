@@ -1,0 +1,52 @@
+Run 1:
+❯ ./main.out
+Enter in a random non negative number: 37
+Decimal : 37
+Hexadecimal : 0x25
+32 bit Binary : 0000 0000 0000 0000 0000 0000 0010 0101
+Enter in a bit position (0 - 31) : 0
+
+Bit 0 is set (1)
+The result of "value & (1u << position)":
+Decimal : 1
+Hexadecimal : 0x1
+Enter in a bit position (0 - 31) again: 7
+Set :	Num : 165 , Hexadecimal : 0xa5 , Binary : 0b10100101
+Clear :	Num : 37 , Hexadecimal : 0x25 , Binary : 0b100101
+Toggle :	Num : 165 , Hexadecimal : 0xa5 , Binary : 0b10100101
+
+
+Run 2:
+❯ ./main.out
+Enter in a random non negative number: 200000000
+Decimal : 200000000
+Hexadecimal : 0xbebc200
+32 bit Binary : 0000 1011 1110 1011 1100 0010 0000 0000
+Enter in a bit position (0 - 31) : 12
+
+Bit 12 is not set (0)
+The result of "value & (1u << position)":
+Decimal : 0
+Hexadecimal : 0x0
+Enter in a bit position (0 - 31) again: 9
+Set :	Num : 200000000 , Hexadecimal : 0xbebc200 , Binary : 0b1011111010111100001000000000
+Clear :	Num : 199999488 , Hexadecimal : 0xbebc000 , Binary : 0b1011111010111100000000000000
+Toggle :	Num : 199999488 , Hexadecimal : 0xbebc000 , Binary : 0b1011111010111100000000000000
+
+
+Run 3:
+❯ ./main.out
+Enter in a random non negative number: 255
+Decimal : 255
+Hexadecimal : 0xff
+32 bit Binary : 0000 0000 0000 0000 0000 0000 1111 1111
+Enter in a bit position (0 - 31) : 4
+
+Bit 4 is set (1)
+The result of "value & (1u << position)":
+Decimal : 16
+Hexadecimal : 0x10
+Enter in a bit position (0 - 31) again: 8
+Set :	Num : 511 , Hexadecimal : 0x1ff , Binary : 0b111111111
+Clear :	Num : 255 , Hexadecimal : 0xff , Binary : 0b11111111
+Toggle :	Num : 511 , Hexadecimal : 0x1ff , Binary : 0b111111111

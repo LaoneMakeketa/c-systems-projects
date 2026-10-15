@@ -12,7 +12,7 @@
 *.map
 *.exp
 
-# Precompiled Headers
+# Precompiled headers
 *.gch
 *.pch
 
@@ -22,7 +22,7 @@
 *.la
 *.lo
 
-# Shared objects (inc. Windows DLLs)
+# Shared objects
 *.dll
 *.so
 *.so.*
@@ -42,14 +42,18 @@
 *.idb
 *.pdb
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# --- Zed editor ---
+.zed/
+*.zed/
 
-# debug information files
-*.dwo
+# --- OS (Linux / CachyOS) ---
+.DS_Store
+Thumbs.db
+*~
+
+# --- Build / package clutter (Arch / CachyOS) ---
+*.pkg.tar.zst
+*.pkg.tar.xz
+*.src.tar.gz
+pkg/
+src/
